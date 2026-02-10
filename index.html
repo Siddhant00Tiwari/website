@@ -1,161 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddhant Tiwari | DevOps Portfolio</title>
+    <title>Siddhant Tiwari | DevOps Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .gradient-text {
             background: linear-gradient(90deg, #60a5fa, #a855f7);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
-<body class="bg-[#0f172a] text-slate-300 font-sans selection:bg-blue-500/30">
+<body class="bg-[#0b1120] text-slate-300 font-sans selection:bg-blue-500/30 overflow-x-hidden">
 
-    <nav class="fixed w-full bg-[#0f172a]/80 backdrop-blur-md z-50 border-b border-slate-800">
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-900/20 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-900/20 rounded-full blur-[120px]"></div>
+    </div>
+
+    <nav class="fixed w-full bg-[#0b1120]/80 backdrop-blur-lg z-50 border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tighter text-white uppercase">Devops</span>
-            <div class="space-x-8 hidden md:flex items-center text-sm font-medium uppercase tracking-wider">
-                <a href="#impact" class="hover:text-blue-400 transition">Impact</a>
-                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
-                <a href="#skills" class="hover:text-blue-400 transition">Tech Stack</a>
-                <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
+            <span class="text-xl font-bold tracking-tighter text-white uppercase">ST.Devops</span>
+            <div class="space-x-8 hidden md:flex items-center text-xs font-medium uppercase tracking-wider">
+                <a href="#impact" class="hover:text-blue-400 transition-colors">Impact</a>
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors">Stack</a>
+                <a href="#certifications" class="hover:text-blue-400 transition-colors text-blue-400 font-bold">Certs</a>
             </div>
         </div>
     </nav>
 
-    <section class="pt-40 pb-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-white tracking-tight">Siddhant Tiwari</h1>
-            <p class="text-2xl gradient-text font-semibold mb-8">DevOps & Cloud Infrastructure Specialist</p>
-            <p class="text-lg leading-relaxed text-slate-400 mb-10">
-                Engineering secure, scalable cloud architectures with a focus on automation and cost-efficiency. 
-                Expertise in reducing infrastructure overhead by up to <span class="text-blue-400 font-bold">88%</span> 
-                while implementing enterprise-grade observability and CI/CD workflows.
+    <section class="relative min-h-screen flex items-center justify-center px-6">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
+            <div class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest text-blue-400 uppercase bg-blue-400/10 rounded-full border border-blue-400/20">
+                Available for Cloud Operations
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black mb-6 text-white tracking-tight">
+                Siddhant <span class="gradient-text">Tiwari</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Automating at scale. Optimizing for speed. Securing the infrastructure of tomorrow.
             </p>
-            <div class="flex justify-center gap-8 text-slate-500">
-                <a href="#" class="hover:text-white transition flex items-center gap-2"><i data-lucide="github" class="w-5 h-5"></i> GitHub</a>
-                <a href="#" class="hover:text-white transition flex items-center gap-2"><i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn</a>
+            <div class="flex justify-center gap-8">
+                <a href="#" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+                    <i data-lucide="github" class="w-6 h-6 group-hover:scale-110 transition-transform"></i> GitHub
+                </a>
+                <a href="#" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+                    <i data-lucide="linkedin" class="w-6 h-6 group-hover:scale-110 transition-transform"></i> LinkedIn
+                </a>
             </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-20">
+            <i data-lucide="chevron-down"></i>
         </div>
     </section>
 
-    <section id="impact" class="py-20 bg-[#1e293b]/50 px-6">
+    <section id="impact" class="py-32 px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-white flex items-center gap-3">
-                <i data-lucide="trending-up" class="text-blue-400"></i> Operational Impact
-            </h2>
+            <h2 class="text-4xl font-bold mb-16 text-white" data-aos="fade-right">Operational Impact</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-[#0f172a] border border-slate-800">
-                    <h3 class="text-blue-400 font-bold mb-4 uppercase tracking-widest text-xs">Cost Optimization</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 mt-1 shrink-0"></i>
-                            <span>Achieved 88% reduction in S3 costs via lifecycle automation.</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 mt-1 shrink-0"></i>
-                            <span>Cut container registry costs by 60% through Harbor migration.</span>
-                        </li>
-                    </ul>
+                <div class="glass p-8 rounded-3xl group hover:border-blue-500/50 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="coins"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">88% Cost Reduction</h3>
+                    <p class="text-slate-400 leading-relaxed">Implemented S3 lifecycle policies and backup compression, drastically cutting cloud storage overhead.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-[#0f172a] border border-slate-800">
-                    <h3 class="text-purple-400 font-bold mb-4 uppercase tracking-widest text-xs">Cloud Engineering</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="check-circle-2" class="w-5 h-5 text-purple-500 mt-1 shrink-0"></i>
-                            <span>Migrated serverless functions to Dockerized microservices.</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="check-circle-2" class="w-5 h-5 text-purple-500 mt-1 shrink-0"></i>
-                            <span>Enabled zero-trust production access via WireGuard VPN.</span>
-                        </li>
-                    </ul>
+                <div class="glass p-8 rounded-3xl group hover:border-purple-500/50 transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="container"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">60% Registry Savings</h3>
+                    <p class="text-slate-400 leading-relaxed">Migrated container images from Amazon ECR to self-hosted Harbor, optimizing registry expenditure.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-[#0f172a] border border-slate-800">
-                    <h3 class="text-green-400 font-bold mb-4 uppercase tracking-widest text-xs">CI/CD & Delivery</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 mt-1 shrink-0"></i>
-                            <span>Implemented Canary deployments and feature flagging.</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 mt-1 shrink-0"></i>
-                            <span>Automated end-to-end builds using GitHub Actions.</span>
-                        </li>
-                    </ul>
+                <div class="glass p-8 rounded-3xl group hover:border-green-500/50 transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center text-green-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Zero-Trust Access</h3>
+                    <p class="text-slate-400 leading-relaxed">Secured production database access using WireGuard VPN, ensuring private ports remain private.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-20 px-6">
+    <section id="skills" class="py-32 bg-[#080d1a] px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-white">Technical Projects</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="p-8 border border-slate-800 rounded-2xl hover:bg-slate-800/30 transition">
-                    <h3 class="text-xl font-bold text-white mb-3">Serverless Bulk Email System</h3>
-                    <p class="text-slate-400 mb-4">Architected a fault-tolerant system using AWS API Gateway, Lambda, SQS, and SES with DLQ-based error handling.</p>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-bold mb-6 text-white">Technical Ecosystem</h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">I specialize in maintaining high-availability systems using modern DevOps tooling. My workflow focuses on Infrastructure as Code (IaC) and comprehensive observability.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-slate-800 rounded-lg text-sm font-medium border border-slate-700 hover:border-blue-500 transition-colors">Kubernetes</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-lg text-sm font-medium border border-slate-700 hover:border-blue-500 transition-colors">Terraform</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-lg text-sm font-medium border border-slate-700 hover:border-blue-500 transition-colors">Prometheus</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-lg text-sm font-medium border border-slate-700 hover:border-blue-500 transition-colors">Docker Swarm</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-lg text-sm font-medium border border-slate-700 hover:border-blue-500 transition-colors">AWS CodeDeploy</span>
+                    </div>
                 </div>
-                <div class="p-8 border border-slate-800 rounded-2xl hover:bg-slate-800/30 transition">
-                    <h3 class="text-xl font-bold text-white mb-3">Cloud Data Pipeline</h3>
-                    <p class="text-slate-400 mb-4">Built an AWS Glue ETL pipeline transforming S3 data into Parquet format for high-performance Redshift analytics.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-20 bg-[#0f172a] px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-white">Technical Ecosystem</h2>
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="p-6 rounded-xl bg-[#1e293b] border border-slate-700">
-                    <p class="text-blue-400 font-bold text-xs uppercase mb-3">Infrastructure</p>
-                    <p class="text-white text-sm leading-relaxed">AWS, Hetzner, Terraform, Ansible, Bash</p>
-                </div>
-                <div class="p-6 rounded-xl bg-[#1e293b] border border-slate-700">
-                    <p class="text-purple-400 font-bold text-xs uppercase mb-3">Containerization</p>
-                    <p class="text-white text-sm leading-relaxed">Kubernetes, Docker, Docker Swarm, Harbor</p>
-                </div>
-                <div class="p-6 rounded-xl bg-[#1e293b] border border-slate-700">
-                    <p class="text-green-400 font-bold text-xs uppercase mb-3">Observability</p>
-                    <p class="text-white text-sm leading-relaxed">Datadog, Prometheus, Grafana, SigNoz</p>
-                </div>
-                <div class="p-4 border border-slate-800 rounded-lg bg-[#1e293b]">
-                    <p class="text-red-400 font-bold text-xs uppercase mb-2">Security</p>
-                    <p class="text-white text-sm leading-relaxed">WireGuard, Nmap, Burp Suite, Nessus</p>
+                <div class="grid grid-cols-2 gap-4" data-aos="zoom-in">
+                    <div class="p-6 bg-[#0b1120] border border-slate-800 rounded-2xl">
+                        <p class="text-blue-400 text-xs font-bold uppercase mb-2">Observability</p>
+                        <p class="text-white font-medium italic text-sm">Datadog, SigNoz, Grafana</p>
+                    </div>
+                    <div class="p-6 bg-[#0b1120] border border-slate-800 rounded-2xl">
+                        <p class="text-purple-400 text-xs font-bold uppercase mb-2">Cloud Platforms</p>
+                        <p class="text-white font-medium italic text-sm">AWS, Hetzner Cloud</p>
+                    </div>
+                    <div class="p-6 bg-[#0b1120] border border-slate-800 rounded-2xl">
+                        <p class="text-green-400 text-xs font-bold uppercase mb-2">Security</p>
+                        <p class="text-white font-medium italic text-sm">Nmap, OWASP, Burp Suite</p>
+                    </div>
+                    <div class="p-6 bg-[#0b1120] border border-slate-800 rounded-2xl">
+                        <p class="text-red-400 text-xs font-bold uppercase mb-2">CI/CD</p>
+                        <p class="text-white font-medium italic text-sm">GitHub Actions, Ansible</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="certifications" class="py-24 bg-gradient-to-br from-blue-700 to-indigo-900 px-6 text-white text-center">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12">Verified Professional Credentials</h2>
+    <section id="certifications" class="py-32 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 text-white" data-aos="fade-up">Professional Certifications</h2>
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-md border border-white/20">
-                    <div class="flex justify-center mb-4"><i data-lucide="award" class="w-10 h-10"></i></div>
-                    <h3 class="font-bold text-xl mb-1">AWS Certified Solutions Architect</h3>
-                    <p class="text-blue-200 text-sm">Associate | Oct 2024 — Oct 2027</p>
+                <div class="glass p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-white mb-2 tracking-tight uppercase">AWS Solutions Architect</h3>
+                    <p class="text-blue-400 font-mono text-xs mb-4">ASSOCIATE • 2024-2027</p>
+                    <p class="text-slate-500 text-sm">Credential ID: ba599df16242...</p>
                 </div>
-                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-md border border-white/20">
-                    <div class="flex justify-center mb-4"><i data-lucide="shield-check" class="w-10 h-10"></i></div>
-                    <h3 class="font-bold text-xl mb-1">RHCSA</h3>
-                    <p class="text-blue-200 text-sm">RedHat Certified Administrator | Jan 2024</p>
+                <div class="glass p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold text-white mb-2 tracking-tight uppercase">RHCSA</h3>
+                    <p class="text-blue-400 font-mono text-xs mb-4">REDHAT CERTIFIED • 2024-2027</p>
+                    <p class="text-slate-500 text-sm">Credential ID: 240-017-939</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
-        <p>Siddhant Tiwari &bull; DevOps Portfolio 2026</p>
+    <footer class="py-20 text-center border-t border-slate-900">
+        <p class="text-slate-600 text-sm tracking-widest uppercase">Siddhant Tiwari &bull; 2026 Edition</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init({
+            once: true,
+            duration: 800,
+            easing: 'ease-out-quad',
+        });
         lucide.createIcons();
     </script>
 </body>
