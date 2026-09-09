@@ -1,0 +1,273 @@
+{
+  "profile": {
+    "name": "Siddhant Tiwari",
+    "shortName": "Siddhant",
+    "handle": "root@siddhant",
+    "role": "DevOps & Cloud Infrastructure Engineer",
+    "tagline": "I design resilient platforms with a bias for Kubernetes, cost control, and zero-trust access.",
+    "summary": "DevOps engineer focused on secure, scalable, cost-efficient cloud infrastructure. Work centers on automation, high-availability systems, and deep observability.",
+    "location": "India",
+    "availability": "Open to platform, SRE, and DevOps roles",
+    "githubUser": "Siddhant00Tiwari",
+    "timezone": "Asia/Kolkata",
+    "avatar": "https://avatars.githubusercontent.com/u/110492372?v=4",
+    "email": "",
+    "links": {
+      "website": "https://siddhant-tiwari.com",
+      "github": "https://github.com/Siddhant00Tiwari",
+      "linkedin": "https://www.linkedin.com/in/siddhant-tiwari-884653177/"
+    }
+  },
+  "focus": [
+    "Kubernetes workload optimization",
+    "Cloud cost engineering",
+    "Zero-trust networking",
+    "CI/CD and infrastructure as code"
+  ],
+  "metrics": [
+    {
+      "value": 88,
+      "suffix": "%",
+      "label": "S3 cost reduction",
+      "detail": "Lifecycle transitions plus high-ratio backup compression on Amazon S3."
+    },
+    {
+      "value": 60,
+      "suffix": "%",
+      "label": "Registry savings",
+      "detail": "Moved container assets off ECR onto self-hosted Harbor."
+    },
+    {
+      "value": 0,
+      "suffix": "",
+      "label": "VPN-only DB path",
+      "display": "VPN",
+      "detail": "Production database access locked behind WireGuard."
+    },
+    {
+      "value": 3,
+      "suffix": "",
+      "label": "Core certifications",
+      "detail": "AWS SAA-C03, CKA, and RHCSA."
+    }
+  ],
+  "certs": [
+    {
+      "id": "cka",
+      "name": "CKA",
+      "full": "Certified Kubernetes Administrator",
+      "issuer": "CNCF / Linux Foundation",
+      "accent": "cyan"
+    },
+    {
+      "id": "saa",
+      "name": "AWS SAA-C03",
+      "full": "Solutions Architect Associate",
+      "issuer": "Amazon Web Services",
+      "accent": "orange"
+    },
+    {
+      "id": "rhcsa",
+      "name": "RHCSA",
+      "full": "Red Hat Certified System Administrator",
+      "issuer": "Red Hat",
+      "accent": "red"
+    }
+  ],
+  "stack": [
+    {
+      "id": "cloud",
+      "name": "Cloud",
+      "items": ["AWS EC2", "ECS / Fargate", "S3", "IAM", "VPC", "Glue", "Redshift", "Hetzner Cloud"]
+    },
+    {
+      "id": "orchestration",
+      "name": "Orchestration",
+      "items": ["Kubernetes", "Docker", "Docker Swarm", "Harbor"]
+    },
+    {
+      "id": "delivery",
+      "name": "CI/CD & IaC",
+      "items": ["GitHub Actions", "Terraform", "Ansible", "Jenkins", "Unleash"]
+    },
+    {
+      "id": "observability",
+      "name": "Observability",
+      "items": ["Prometheus", "Grafana", "Alertmanager", "SigNoz", "Datadog", "OpenTelemetry"]
+    },
+    {
+      "id": "networking",
+      "name": "Networking & Access",
+      "items": ["WireGuard", "NGINX", "Apache", "AWS ALB"]
+    },
+    {
+      "id": "data",
+      "name": "Data & Runtime",
+      "items": ["PostgreSQL", "Strapi", "Redshift", "Feature flags"]
+    }
+  ],
+  "experience": [
+    {
+      "id": "cost",
+      "period": "Platform work",
+      "title": "Cloud cost engineering",
+      "org": "AWS + Harbor",
+      "summary": "Cut object storage and registry spend without taking workloads offline.",
+      "points": [
+        "Reduced Amazon S3 spend by 88% with lifecycle policies and backup compression.",
+        "Migrated container images from ECR to Harbor and recovered about 60% of registry cost.",
+        "Moved compute-heavy container workloads toward Hetzner where it was cheaper to run."
+      ]
+    },
+    {
+      "id": "zero-trust",
+      "period": "Security",
+      "title": "Zero-trust production access",
+      "org": "WireGuard",
+      "summary": "Removed the public path to production data.",
+      "points": [
+        "Put production database access behind WireGuard instead of open security groups.",
+        "Treated the VPN as the control plane for operator access, not a convenience overlay."
+      ]
+    },
+    {
+      "id": "observe",
+      "period": "Reliability",
+      "title": "Observability stack",
+      "org": "Prometheus · Grafana · SigNoz",
+      "summary": "Centralized metrics, logs, and traces so failures show up before users do.",
+      "points": [
+        "Deployed Prometheus, Grafana, and Alertmanager with Slack routing.",
+        "Added SigNoz and OpenTelemetry tracing across Node.js services.",
+        "Used Unleash feature flags and canary releases to ship without all-or-nothing deploys."
+      ]
+    },
+    {
+      "id": "data-platform",
+      "period": "Data",
+      "title": "Analytics pipelines",
+      "org": "AWS Glue · Redshift",
+      "summary": "Built ETL that feeds analytics without hand-operated jobs.",
+      "points": [
+        "Implemented Glue jobs that land curated data in Redshift for analytics workloads."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "harbor-migration",
+      "title": "Harbor registry & container strategy",
+      "blurb": "Moved image storage off ECR onto Harbor, then ran services on Swarm with cheaper Hetzner capacity.",
+      "tags": ["Harbor", "Hetzner", "Swarm", "GitHub Actions"],
+      "accent": "blue",
+      "points": [
+        "Zero-downtime transition off Amazon ECR.",
+        "GitHub Actions scans images before they land in the registry.",
+        "Swarm service orchestration on cost-efficient hosts."
+      ],
+      "repo": "harbor"
+    },
+    {
+      "id": "observability",
+      "title": "LGTM + SigNoz observability",
+      "blurb": "A single place to watch metrics, logs, traces, and error budgets.",
+      "tags": ["Prometheus", "Grafana", "SigNoz", "OpenTelemetry"],
+      "accent": "green",
+      "points": [
+        "Alertmanager to Slack for paging that humans can actually use.",
+        "Distributed tracing for Node.js microservices.",
+        "APM and error tracking in one operator workflow."
+      ]
+    },
+    {
+      "id": "strapi-ecs",
+      "title": "Strapi on ECS Fargate",
+      "blurb": "Infrastructure-as-code for a Strapi CMS running on AWS ECS, including a CodeDeploy path.",
+      "tags": ["AWS", "ECS", "Fargate", "Terraform"],
+      "accent": "orange",
+      "points": [
+        "Fargate service definitions in HCL so environments are repeatable.",
+        "CodeDeploy flow for safer container rollouts."
+      ],
+      "repo": "strapi-ecs-fargate"
+    },
+    {
+      "id": "wireguard",
+      "title": "WireGuard access plane",
+      "blurb": "Production databases reachable only through a WireGuard overlay.",
+      "tags": ["WireGuard", "Zero trust", "Linux"],
+      "accent": "teal",
+      "points": [
+        "Closed public database exposure.",
+        "Operator access follows the mesh, not a jump box ritual."
+      ]
+    },
+    {
+      "id": "ansible",
+      "title": "Ansible provisioning",
+      "blurb": "Repeatable host configuration with playbooks and Jinja templates.",
+      "tags": ["Ansible", "Linux", "IaC"],
+      "accent": "red",
+      "repo": "ansible_scripts"
+    },
+    {
+      "id": "jenkins",
+      "title": "Jenkins delivery lab",
+      "blurb": "Pipeline practice for container builds and automated promotion.",
+      "tags": ["Jenkins", "Docker", "CI/CD"],
+      "accent": "slate",
+      "repo": "jenkins_project"
+    }
+  ],
+  "notes": [
+    {
+      "id": "s3-lifecycle",
+      "title": "How an 88% S3 cut actually happens",
+      "date": "2026-02-01",
+      "tags": ["AWS", "Cost", "S3"],
+      "excerpt": "Most S3 bills are forgotten storage classes, not request volume.",
+      "body": "Object storage gets expensive when every backup stays in Standard forever. The cut came from two boring controls: lifecycle rules that move cold objects into cheaper classes, and compressing backup artifacts before they land in the bucket. The important part is measuring the bill per prefix first. Without that, lifecycle policies become guesswork and you risk moving data that still needs millisecond reads."
+    },
+    {
+      "id": "harbor-vs-ecr",
+      "title": "Why Harbor replaced ECR here",
+      "date": "2026-01-18",
+      "tags": ["Harbor", "Kubernetes", "Cost"],
+      "excerpt": "Managed registries are convenient until image retention becomes a line item.",
+      "body": "ECR is fine until retention, replication, and vulnerability scanning stack on top of compute you already pay for elsewhere. Harbor on Hetzner kept scanning in GitHub Actions, gave a self-hosted registry that the cluster already trusted, and dropped about 60% of registry spend. The migration path that mattered was tag immutability plus a dual-pull window so Swarm services never raced a registry cutover."
+    },
+    {
+      "id": "wireguard-db",
+      "title": "Databases should not have a public story",
+      "date": "2025-11-12",
+      "tags": ["WireGuard", "Security", "Networking"],
+      "excerpt": "A security group with your office IP is not a zero-trust design.",
+      "body": "The production database now accepts traffic only from the WireGuard interface. Operators join the mesh, then use the internal address. That removes the 'just allow 5432 from this CIDR' exception that always grows. Rotate peer keys, keep split-tunneling limited to the data subnet, and log handshake failures the same way you log SSH."
+    },
+    {
+      "id": "otel-signoz",
+      "title": "Traces before more dashboards",
+      "date": "2025-09-04",
+      "tags": ["OpenTelemetry", "SigNoz", "SRE"],
+      "excerpt": "Another Grafana row will not explain a slow checkout.",
+      "body": "Metrics say something is wrong. Traces say which hop. SigNoz on OpenTelemetry let Node services emit spans without a vendor SDK lock-in, while Prometheus still scraped platform metrics. Alertmanager stayed the pager. The rule I keep: no new dashboard until the service emits a useful trace id in its error logs."
+    },
+    {
+      "id": "flags-canary",
+      "title": "Canaries need a flag, not a prayer",
+      "date": "2025-07-22",
+      "tags": ["Unleash", "CI/CD", "Kubernetes"],
+      "excerpt": "Shipping 100% of traffic on a Friday is a habit, not a strategy.",
+      "body": "Unleash sits in front of risky behavior so a bad build does not require a full rollback to hide a feature. Combine that with a canary ReplicaSet or weighted service and you get two independent kill switches: traffic weight and flag state. That is the difference between a deploy and a release."
+    }
+  ],
+  "nav": [
+    { "id": "home", "href": "/", "label": "Home" },
+    { "id": "about", "href": "/about.html", "label": "About" },
+    { "id": "projects", "href": "/projects.html", "label": "Projects" },
+    { "id": "experience", "href": "/experience.html", "label": "Experience" },
+    { "id": "stack", "href": "/stack.html", "label": "Stack" },
+    { "id": "notes", "href": "/notes.html", "label": "Notes" },
+    { "id": "contact", "href": "/contact.html", "label": "Contact" }
+  ]
+}
