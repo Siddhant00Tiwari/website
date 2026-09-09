@@ -1,0 +1,9 @@
+{
+  "name": "siddhant00tiwari-github-io",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check assets/js/app.js && node --check assets/js/pages.js && node --check assets/js/github.js && node --check assets/js/dom.js && node scripts/check-site.mjs",
+    "start": "python -m http.server 4173"
+  }
+}

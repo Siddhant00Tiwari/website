@@ -1,275 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddhant Tiwari | Cloud & DevOps Engineer</title>
-    <meta name="description" content="DevOps specialist focused on AWS, Kubernetes (CKA), and Cloud Cost Optimization.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root { --bg: #020617; --card: #0f172a; }
-        body { 
-            background-color: var(--bg); 
-            color: #94a3b8; 
-            font-family: 'Inter', sans-serif;
-            background-image: 
-                radial-gradient(circle at 2px 2px, rgba(255,255,255,0.02) 1px, transparent 0);
-            background-size: 40px 40px;
-        }
-        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08); }
-        .hero-gradient { background: radial-gradient(circle at 50% 50%, #1e40af15 0%, transparent 70%); }
-        .terminal-window { border-radius: 12px; box-shadow: 0 0 40px rgba(0,0,0,0.6); border: 1px solid #1e293b; }
-        .gradient-text { background: linear-gradient(135deg, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #020617; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #60a5fa; }
-
-        .cert-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .cert-card:hover { transform: translateY(-5px); border-color: rgba(96, 165, 250, 0.4); background: rgba(30, 41, 59, 0.5); }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddhant Tiwari | DevOps & Cloud Infrastructure Engineer</title>
+  <meta name="description" content="DevOps engineer focused on AWS, Kubernetes, Harbor, WireGuard, and cloud cost control." />
+  <link rel="canonical" href="https://siddhant-tiwari.com/" />
+  <meta property="og:title" content="Siddhant Tiwari | DevOps & Cloud Infrastructure Engineer" />
+  <meta property="og:description" content="Resilient infrastructure with Kubernetes, cost engineering, and zero-trust access." />
+  <meta property="og:url" content="https://siddhant-tiwari.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#07090f" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body class="selection:bg-blue-500/30 overflow-x-hidden">
-
-    <div class="fixed inset-0 hero-gradient pointer-events-none"></div>
-
-    <nav class="fixed w-full z-50 glass border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="font-mono text-white font-bold tracking-tighter flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                root@siddhant:~#
-            </span>
-            <div class="hidden md:flex gap-8 text-[10px] uppercase tracking-[0.2em] font-bold">
-                <a href="#impact" class="hover:text-blue-400 transition">Operational_Metrics</a>
-                <a href="#projects" class="hover:text-blue-400 transition">Architectures</a>
-                <a href="#stack" class="hover:text-blue-400 transition">Tech_Stack</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="pt-48 pb-20 px-6">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-            <div data-aos="fade-right">
-                <div class="inline-flex items-center gap-2 px-3 py-1 mb-6 text-[10px] font-bold tracking-widest text-blue-400 uppercase bg-blue-400/10 rounded-full border border-blue-400/20">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                    </span>
-                    Siddhant Tiwari • DevOps Engineer
-                </div>
-                <h1 class="text-6xl md:text-8xl font-black text-white mb-6 leading-[0.9] tracking-tighter">
-                    Cloud <span class="gradient-text">Architect.</span>
-                </h1>
-                <p class="text-xl text-slate-400 mb-10 max-w-lg leading-relaxed">
-                    Engineering resilient infrastructure with a focus on <span class="text-white font-semibold">Scalability</span>, <span class="text-white font-semibold">Kubernetes</span>, and aggressive <span class="text-white font-semibold">Cost Efficiency</span>.
-                </p>
-                
-                <div class="flex flex-wrap gap-3">
-                    <div class="flex items-center gap-2 px-4 py-2 glass rounded-xl border-l-2 border-l-blue-500 shadow-xl shadow-blue-500/5">
-                        <span class="text-[10px] font-black text-white uppercase tracking-wider">AWS SAA</span>
-                    </div>
-                    <div class="flex items-center gap-2 px-4 py-2 glass rounded-xl border-l-2 border-l-cyan-400 shadow-xl shadow-cyan-500/5">
-                        <span class="text-[10px] font-black text-white uppercase tracking-wider">CKA (Kubernetes)</span>
-                    </div>
-                    <div class="flex items-center gap-2 px-4 py-2 glass rounded-xl border-l-2 border-l-red-500 shadow-xl shadow-red-500/5">
-                        <span class="text-[10px] font-black text-white uppercase tracking-wider">RHCSA</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="terminal-window bg-[#0d1117] p-1 group" data-aos="zoom-in">
-                <div class="bg-[#161b22] rounded-t-lg p-3 flex gap-2 border-b border-white/5">
-                    <div class="w-3 h-3 rounded-full bg-red-500/20 group-hover:bg-red-500 transition-colors"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500/20 group-hover:bg-yellow-500 transition-colors"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500/20 group-hover:bg-green-500 transition-colors"></div>
-                </div>
-                <div class="p-6 font-mono text-sm space-y-3">
-                    <p class="text-green-400">siddhant@devops:~$ <span class="text-white">kubectl get nodes</span></p>
-                    <p class="text-slate-500">NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STATUS &nbsp;&nbsp; ROLES &nbsp;&nbsp;&nbsp; AGE</p>
-                    <p class="text-white">cluster-01 &nbsp; Ready &nbsp;&nbsp;&nbsp; control &nbsp; 325d</p>
-                    <p class="text-white">worker-01 &nbsp;&nbsp; Ready &nbsp;&nbsp;&nbsp; worker &nbsp;&nbsp; 325d</p>
-                    <p class="text-green-400">siddhant@devops:~$ <span class="text-white">fetch-metrics --savings</span></p>
-                    <p class="text-blue-400">S3_COST: <span class="text-white">-88% (Optimized)</span></p>
-                    <p class="text-purple-400">REGISTRY: <span class="text-white">-60% (Migrated to Harbor)</span></p>
-                    <p class="text-green-400 animate-pulse">_</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="impact" class="py-24 px-6 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl font-black text-white mb-16 tracking-tighter" data-aos="fade-up">Operational Excellence</h2>
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="md:col-span-2 glass p-10 rounded-[2rem] relative group" data-aos="fade-up">
-                    <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <i data-lucide="trending-down" class="w-24 h-24 text-blue-500"></i>
-                    </div>
-                    <h3 class="text-5xl font-black text-white mb-4">88%</h3>
-                    <p class="text-blue-400 font-bold uppercase tracking-widest text-xs mb-4">Cloud Cost Reduction</p>
-                    <p class="text-slate-400 leading-relaxed text-sm">Reduced Amazon S3 expenditure via aggressive lifecycle transitions and high-ratio backup compression.</p>
-                </div>
-                
-                <div class="glass p-10 rounded-[2rem] border-t-4 border-t-purple-500" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-4xl font-black text-white mb-2">60%</h3>
-                    <p class="text-xs uppercase font-bold tracking-widest text-slate-500 mb-6">Storage Savings</p>
-                    <p class="text-[11px] font-bold text-slate-300">ECR TO HARBOR MIGRATION</p>
-                </div>
-
-                <div class="glass p-10 rounded-[2rem] border-t-4 border-t-cyan-500" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-4xl font-black text-white mb-2">VPN</h3>
-                    <p class="text-xs uppercase font-bold tracking-widest text-slate-500 mb-6">Zero Trust Network</p>
-                    <p class="text-[11px] font-bold text-slate-300">WIREGUARD IMPLEMENTATION</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="certifications" class="py-12 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="glass cert-card p-8 rounded-3xl flex items-center gap-6" data-aos="fade-up">
-                    <div class="p-4 bg-cyan-500/10 rounded-2xl">
-                        <i data-lucide="layers" class="text-cyan-400 w-8 h-8"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-white font-bold text-lg leading-none">CKA</h4>
-                        <p class="text-[10px] text-slate-500 uppercase tracking-widest mt-2 font-bold">Certified Kubernetes Admin</p>
-                    </div>
-                </div>
-
-                <div class="glass cert-card p-8 rounded-3xl flex items-center gap-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-4 bg-orange-500/10 rounded-2xl">
-                        <i data-lucide="cloud" class="text-orange-400 w-8 h-8"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-white font-bold text-lg leading-none">AWS SAA-C03</h4>
-                        <p class="text-[10px] text-slate-500 uppercase tracking-widest mt-2 font-bold">Solutions Architect Assoc.</p>
-                    </div>
-                </div>
-
-                <div class="glass cert-card p-8 rounded-3xl flex items-center gap-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-4 bg-red-500/10 rounded-2xl">
-                        <i data-lucide="terminal" class="text-red-400 w-8 h-8"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-white font-bold text-lg leading-none">RHCSA</h4>
-                        <p class="text-[10px] text-slate-500 uppercase tracking-widest mt-2 font-bold">Red Hat Sys Admin</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-32 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex items-center gap-4 mb-16" data-aos="fade-right">
-                <h2 class="text-4xl font-black text-white tracking-tighter">Architectural Portfolio</h2>
-                <div class="h-[1px] flex-grow bg-white/10"></div>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-8">
-                <div class="glass p-10 rounded-[3rem] border-white/5 hover:border-blue-500/30 transition-all duration-500 group" data-aos="fade-up">
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="p-4 bg-blue-500/10 rounded-2xl group-hover:scale-110 transition-transform">
-                            <i data-lucide="container" class="text-blue-400 w-8 h-8"></i>
-                        </div>
-                        <span class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-tighter">Hetzner • Swarm</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Migration & Container Strategy</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">
-                        Architected the migration of container assets from AWS to **Harbor**, optimizing compute costs by leveraging **Hetzner Cloud**. Integrated **GitHub Actions** for automated vulnerability scanning.
-                    </p>
-                    <ul class="space-y-3 font-mono text-[11px] text-slate-300">
-                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> Zero-downtime ECR transition</li>
-                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> Swarm service orchestration</li>
-                    </ul>
-                </div>
-
-                <div class="glass p-10 rounded-[3rem] border-white/5 hover:border-green-500/30 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="p-4 bg-green-500/10 rounded-2xl group-hover:scale-110 transition-transform">
-                            <i data-lucide="activity" class="text-green-400 w-8 h-8"></i>
-                        </div>
-                        <span class="bg-green-500/10 text-green-400 text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-tighter">Prometheus • Grafana</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Observability Stack</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">
-                        Deployed a centralized logging and monitoring solution using the **LGTM stack**. Implemented **SigNoz** for OpenTelemetry-based distributed tracing in Node.js microservices.
-                    </p>
-                    <ul class="space-y-3 font-mono text-[11px] text-slate-300">
-                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> AlertManager Slack integration</li>
-                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> APM & Error Tracking</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="stack" class="py-32 px-6 bg-slate-950/50">
-        <div class="max-w-7xl mx-auto">
-            <p class="text-center text-[10px] uppercase font-black tracking-[0.5em] text-slate-600 mb-16 italic">Technical Ecosystem</p>
-            <div class="grid grid-cols-2 md:grid-cols-6 gap-12 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
-                <div class="flex flex-col items-center gap-4 group">
-                    <i data-lucide="cloud" class="w-10 h-10 text-blue-400 group-hover:scale-110 transition-transform"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">AWS</span>
-                </div>
-                <div class="flex flex-col items-center gap-4 group">
-                    <i data-lucide="box" class="w-10 h-10 text-cyan-400 group-hover:scale-110 transition-transform"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">Kubernetes</span>
-                </div>
-                <div class="flex flex-col items-center gap-4 group">
-                    <i data-lucide="cpu" class="w-10 h-10 text-orange-400 group-hover:scale-110 transition-transform"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">Terraform</span>
-                </div>
-                <div class="flex flex-col items-center gap-4 group">
-                    <i data-lucide="git-branch" class="w-10 h-10 text-pink-400 group-hover:scale-110 transition-transform"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">CI/CD</span>
-                </div>
-                <div class="flex flex-col items-center gap-4 group">
-                    <i data-lucide="database" class="w-10 h-10 text-red-400 group-hover:scale-110 transition-transform"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">PostgreSQL</span>
-                </div>
-                <div class="flex flex-col items-center gap-4 group">
-                    <i data-lucide="shield-check" class="w-10 h-10 text-green-400 group-hover:scale-110 transition-transform"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">WireGuard</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-20 border-t border-white/5 bg-slate-950/80">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="mb-12">
-                <p class="font-mono text-[11px] tracking-[0.3em] uppercase text-slate-500">Pipeline Status: <span class="text-green-500">Successful</span></p>
-                <p class="text-slate-600 text-[10px] mt-2">© 2026 Siddhant Tiwari • Built with Tailwind & Lucide</p>
-            </div>
-            <div class="flex justify-center gap-12 text-xs font-bold uppercase tracking-widest">
-                <a href="#" class="text-slate-400 hover:text-blue-500 transition">GitHub</a>
-                <a href="#" class="text-slate-400 hover:text-blue-500 transition">LinkedIn</a>
-                <a href="https://siddhant-tiwari.com" class="text-slate-400 hover:text-blue-500 transition">Portfolio</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            AOS.init({
-                once: true,
-                duration: 800,
-                easing: 'ease-out',
-                offset: 100
-            });
-            lucide.createIcons();
-        });
-    </script>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main" data-page="home">
+    <noscript>
+      <section class="wrap page-hero">
+        <h1>Siddhant Tiwari</h1>
+        <p>DevOps & Cloud Infrastructure Engineer. Enable JavaScript to load live GitHub data, the interactive terminal, and shared navigation.</p>
+        <p><a href="/about.html">About</a> · <a href="/projects.html">Projects</a> · <a href="/experience.html">Experience</a> · <a href="/stack.html">Stack</a> · <a href="/notes.html">Notes</a> · <a href="/contact.html">Contact</a></p>
+      </section>
+    </noscript>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module" src="/assets/js/app.js"></script>
 </body>
 </html>
